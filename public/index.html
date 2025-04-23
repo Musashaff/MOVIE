@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie App UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0c0f2e] text-white font-sans">
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between p-6 bg-[#0c0f2e] text-white">
+    <div class="text-2xl font-bold">DEMOVIE</div>
+    <ul class="flex space-x-6">
+      <li><a href="/" class="hover:text-orange-400">Home</a></li>
+      <li><a href="/movies" class="hover:text-orange-400">Movies</a></li>
+      <li><a href="/series" class="hover:text-orange-400">TV Series</a></li>
+      <li><a href="#" class="hover:text-orange-400">Genre</a></li>
+    </ul>
+    <div>
+      <input type="text" placeholder="Search..." class="px-3 py-1 rounded bg-gray-800 text-white focus:outline-none" />
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-[400px]" style="background-image: url('download (1).jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+      <button class="bg-orange-500 text-white p-4 rounded-full text-3xl">&#9658;</button>
+    </div>
+  </section>
+
+  <!-- Genre Buttons -->
+  <div class="flex justify-center gap-4 py-6">
+    <button class="px-4 py-2 border border-orange-400 rounded hover:bg-orange-500">Action</button>
+    <button class="px-4 py-2 border border-orange-400 rounded hover:bg-orange-500">Adventure</button>
+    <button class="px-4 py-2 border border-orange-400 rounded hover:bg-orange-500">Drama</button>
+    <button class="px-4 py-2 border border-orange-400 rounded hover:bg-orange-500">Comedy</button>
+    <button class="px-4 py-2 bg-orange-500 text-white rounded">More</button>
+  </div>
+
+  <!-- Movies Section -->
+  <section class="px-10">
+    <h2 class="text-2xl font-bold mb-4">Movies</h2>
+      <!-- Movie Card -->
+      <div class="bg-[#1a1c3b] p-2 rounded grid grid-cols-1 1g:grid-cols-3 gap-6">
+        <img src="The Raid_ Redemption (2011).jpg" alt="Movie" class="rounded" />
+        <div class="mt-2">
+          <span class="text-sm text-orange-400">Action</span>
+          <p class="text-white font-semibold">The Raid (2011)</p>
+        </div>
+        <img src="Mission Impossible 6, Fallout.jpg" alt="Movie" class="rounded" />
+        <div class="mt-2">
+            <span class="text-sm text-orange-400">Action</span>
+            <p class="text-white font-semibold">Mission Impossible (2018)</p>
+          </div>
+          <img src="download (2).jpg" alt="Movie" class="rounded" />
+          <div class="mt-2">
+            <span class="text-sm text-orange-400">Sci-Fi</span>
+            <p class="text-white font-semibold">Inception (2010)</p>
+          </div>
+          <img src="John Wick Chapter 3 Parabellum.jpg" alt="Movie" class="rounded" />
+          <div class="mt-2">
+            <span class="text-sm text-orange-400">Action</span>
+            <p class="text-white font-semibold">John Wick:Chapter 3 (2019)</p>
+          </div>
+          <img src="Ready Player One [2018].jpg" alt="Movie" class="rounded" />
+          <div class="mt-2">
+            <span class="text-sm text-orange-400">Sci-Fi</span>
+            <p class="text-white font-semibold">(Ready Player One (2018)</p>
+          </div>
+          <img src="BLACK PANTHER starring Chadwick Boseman _ In theaters February 16, 2018.jpg" alt="Movie" class="rounded" />
+          <div class="mt-2">
+            <span class="text-sm text-orange-400">Action</span>
+            <p class="text-white font-semibold">Black Panther (2018)</p>
+          </div>
+          <img src="download (3).jpg" alt="Movie" class="rounded" />
+          <div class="mt-2">
+            <span class="text-sm text-orange-400">Action</span>
+            <p class="text-white font-semibold">Guardian of The Galaxy (2014) </p>
+          </div>
+          <img src="download (4).jpg" alt="Movie" class="rounded" />
+          <div class="mt-2">
+            <span class="text-sm text-orange-400">Action</span>
+            <p class="text-white font-semibold">Venom (2018) </p>
+          </div>
+      </div>
+      <!-- Repeat above block for other movies -->
+    
+  </section>
+
+  <!-- Trending Sidebar -->
+  <aside class="px-10 mt-10">
+    <h3 class="text-xl font-semibold mb-3">TRENDS NOW</h3>
+    <ul class="space-y-2">
+      <li class="flex items-center gap-3">
+        <img src="BLACK PANTHER starring Chadwick Boseman _ In theaters February 16, 2018.jpg" class="w-10 h-14 object-cover rounded" />
+        <div>
+          <p>Black Panther</p>
+          <span class="text-sm text-gray-400">2018</span>
+        </div>
+        <img src="download (6).jpg" class="w-10 h-14 object-cover rounded" />
+        <div>
+          <p>Arrival</p>
+          <span class="text-sm text-gray-400">2018</span>
+        </div>
+        <img src="John Wick Chapter 3 Parabellum.jpg" class="w-10 h-14 object-cover rounded" />
+        <div>
+          <p>John Wick:Chapter 3</p>
+          <span class="text-sm text-gray-400">2018</span>
+        </div>
+        <img src="download (5).jpg" class="w-10 h-14 object-cover rounded" />
+        <div>
+          <p>Dead Pool</p>
+          <span class="text-sm text-gray-400">2018</span>
+        </div>
+        <img src="download (4).jpg" class="w-10 h-14 object-cover rounded" />
+        <div>
+          <p>Venom</p>
+          <span class="text-sm text-gray-400">2018</span>
+        </div>
+      </li>
+      <!-- Repeat for other trending movies -->
+    </ul>
+  </aside>
+</body>
+</html>
